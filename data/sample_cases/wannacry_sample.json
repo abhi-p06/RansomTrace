@@ -1,0 +1,154 @@
+{
+  "case_metadata": {
+    "title": "WannaCry Ransomware Global Outbreak",
+    "case_number": "RT-2017-WCRY-001",
+    "incident_type": "Ransomware Extortion",
+    "threat_actor": "Lazarus Group / WannaCry Operation",
+    "investigator_name": "Special Agent J. Miller, Cyber Division",
+    "description": "Analysis of primary ransom payment collection address utilized during the May 2017 worldwide WannaCry cryptoworm attack infecting 200,000+ computers across 150 countries.",
+    "legal_basis": "ISO/IEC 27037 Digital Evidence Acquisition & Sec 65B Indian IT Act 2000"
+  },
+  "wallet": {
+    "address": "13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94",
+    "address_type": "P2PKH (Legacy)",
+    "first_seen": 1494601200,
+    "last_seen": 1501768800,
+    "total_received_sats": 5218765400,
+    "total_sent_sats": 5218765400,
+    "tx_count": 8
+  },
+  "transactions": [
+    {
+      "txid": "9f7b11c38e9d40a1b6a2f7c001e3892fcd62a87893112b07e54f9a0c2049e211",
+      "version": 1,
+      "locktime": 0,
+      "block_height": 466100,
+      "block_time": 1494601200,
+      "fee_sats": 45000,
+      "size_bytes": 225,
+      "raw_inputs": [
+        {
+          "txid": "3a01f4c7811928374a56bce10948572019485720194857201948572019485720",
+          "vout": 0,
+          "prevout": {
+            "scriptpubkey_address": "1VictimCorpA92837465192837461928374",
+            "value": 150000000
+          }
+        }
+      ],
+      "raw_outputs": [
+        {
+          "scriptpubkey_address": "13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94",
+          "value": 149955000
+        }
+      ],
+      "net_value_sats": 149955000,
+      "flow_direction": "INCOMING"
+    },
+    {
+      "txid": "a4d8c03219487625bf93019842610e8293740192837465019283746501928374",
+      "version": 1,
+      "locktime": 0,
+      "block_height": 466250,
+      "block_time": 1494687600,
+      "fee_sats": 52000,
+      "size_bytes": 226,
+      "raw_inputs": [
+        {
+          "txid": "7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c",
+          "vout": 1,
+          "prevout": {
+            "scriptpubkey_address": "1HospitalNetworkHealthNHSUK001928",
+            "value": 200000000
+          }
+        }
+      ],
+      "raw_outputs": [
+        {
+          "scriptpubkey_address": "13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94",
+          "value": 199948000
+        }
+      ],
+      "net_value_sats": 199948000,
+      "flow_direction": "INCOMING"
+    },
+    {
+      "txid": "e2a1b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0",
+      "version": 1,
+      "locktime": 0,
+      "block_height": 478500,
+      "block_time": 1501750000,
+      "fee_sats": 120000,
+      "size_bytes": 374,
+      "raw_inputs": [
+        {
+          "txid": "9f7b11c38e9d40a1b6a2f7c001e3892fcd62a87893112b07e54f9a0c2049e211",
+          "vout": 0,
+          "prevout": {
+            "scriptpubkey_address": "13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94",
+            "value": 149955000
+          }
+        },
+        {
+          "txid": "a4d8c03219487625bf93019842610e8293740192837465019283746501928374",
+          "vout": 0,
+          "prevout": {
+            "scriptpubkey_address": "13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94",
+            "value": 199948000
+          }
+        }
+      ],
+      "raw_outputs": [
+        {
+          "scriptpubkey_address": "1PeelHopTransitWalletAlpha00000001",
+          "value": 45000000
+        },
+        {
+          "scriptpubkey_address": "1PeelHopTransitWalletBeta000000002",
+          "value": 304783000
+        }
+      ],
+      "net_value_sats": -349783000,
+      "flow_direction": "OUTGOING"
+    },
+    {
+      "txid": "f5c4b3a291807f6e5d4c3b2a109f8e7d6c5b4a3928170f6e5d4c3b2a19807f6e",
+      "version": 1,
+      "locktime": 0,
+      "block_height": 478520,
+      "block_time": 1501757200,
+      "fee_sats": 85000,
+      "size_bytes": 450,
+      "raw_inputs": [
+        {
+          "txid": "e2a1b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0",
+          "vout": 1,
+          "prevout": {
+            "scriptpubkey_address": "1PeelHopTransitWalletBeta000000002",
+            "value": 304783000
+          }
+        }
+      ],
+      "raw_outputs": [
+        {
+          "scriptpubkey_address": "1MixerPoolInputWalletX00000000001",
+          "value": 75000000
+        },
+        {
+          "scriptpubkey_address": "1MixerPoolInputWalletY00000000002",
+          "value": 75000000
+        },
+        {
+          "scriptpubkey_address": "1MixerPoolInputWalletZ00000000003",
+          "value": 75000000
+        },
+        {
+          "scriptpubkey_address": "1PeelHopTransitWalletGamma00000003",
+          "value": 79698000
+        }
+      ],
+      "net_value_sats": 0,
+      "flow_direction": "TRANSIT_HOP"
+    }
+  ]
+}

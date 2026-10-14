@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #070a13;
+  --bg-secondary: #0d1322;
+  --bg-surface: #12192d;
+  --bg-card: #152038;
+  --bg-card-hover: #1b2947;
+  --border-subtle: #1e2c4c;
+  --border-active: #00e5ff;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --accent-cyan: #00e5ff;
+  --accent-emerald: #00f59b;
+  --accent-amber: #ffb703;
+  --accent-crimson: #ff3366;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbars for SOC dashboard */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-cyan);
+}
+
+/* Glowing cyber elements */
+.cyber-glow-cyan {
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.15);
+}
+.cyber-glow-emerald {
+  box-shadow: 0 0 15px rgba(0, 245, 155, 0.15);
+}
+.cyber-glow-crimson {
+  box-shadow: 0 0 15px rgba(255, 51, 102, 0.15);
+}
+
+/* Glass panel */
+.soc-panel {
+  background: rgba(18, 25, 45, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+}
+
+.soc-panel:hover {
+  border-color: rgba(0, 229, 255, 0.3);
+}
